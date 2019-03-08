@@ -9,7 +9,9 @@ namespace WpfTheAionProject.PresentationLayer
 {
     class GameSessionViewModel
     {
-
+        /// <summary>
+        /// View model for the game session view 
+        /// </summary>
 
 
         #region Fields

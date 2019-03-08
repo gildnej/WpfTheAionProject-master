@@ -165,10 +165,34 @@
                         <StackPanel
                             Grid.Column="0"
                             Orientation="Vertical">
-                            <Label 
-                                HorizontalAlignment="Center"
-                                Content="Player Info" 
-                                Style="{StaticResource MainPanelLabelStyle}"/>
+                            <StackPanel
+                                Orientation="Horizontal">
+                                <TextBox 
+                                Text="{Binding Player.Name}"
+                                Style="{StaticResource MainPanelTextBoxStyle}"/>
+                                <Label Content="Name" Style="{StaticResource MainPanelLabelStyle}"/>
+                            </StackPanel>
+                            <StackPanel
+                                Orientation="Horizontal">
+                                <TextBox 
+                                Text="{Binding Player.Age}"
+                                Style="{StaticResource MainPanelTextBoxStyle}"/>
+                                <Label Content="Name" Style="{StaticResource MainPanelLabelStyle}"/>
+                            </StackPanel>
+                            <StackPanel
+                                Orientation="Horizontal">
+                                <TextBox 
+                                Text="{Binding Player.JobTitle}"
+                                Style="{StaticResource MainPanelTextBoxStyle}"/>
+                                <Label Content="Name" Style="{StaticResource MainPanelLabelStyle}"/>
+                            </StackPanel>
+                            <StackPanel
+                                Orientation="Horizontal">
+                                <TextBox 
+                                Text="{Binding Player.Race}"
+                                Style="{StaticResource MainPanelTextBoxStyle}"/>
+                                <Label Content="Name" Style="{StaticResource MainPanelLabelStyle}"/>
+                            </StackPanel>
                         </StackPanel>
                         <Border
                             Grid.Column="1"

@@ -12,21 +12,21 @@ namespace WpfTheAionProject.BusinessLayer
     public class GameBusiness
     {
         GameSessionViewModel _gameSessionViewModel = new GameSessionViewModel();
-        bool _newPlayer = false;
         Player _player = new Player();
-        //PlayerSetupView _playerSetupView = null;
+        List<string> _messages = new List<string>();
 
         //constructor
         public GameBusiness()
         {
-            SetupPlayer();
+            InitializeDataSet();
             InstantiateAndShowView();
         }
 
         //**************
-        private void SetupPlayer()
+        private void InitializeDataSet()
         {
             _player = GameData.PlayerData();
+            _messages = GameData.InitialMessages();
         }
 
         private void InstantiateAndShowView()
