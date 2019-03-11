@@ -23,13 +23,13 @@ namespace WpfTheAionProject.BusinessLayer
         }
 
         //**************
-        private void InitializeDataSet()
+        public void InitializeDataSet()
         {
             _player = GameData.PlayerData();
             _messages = GameData.InitialMessages();
         }
 
-        private void InstantiateAndShowView()
+        public void InstantiateAndShowView()
         {
             _gameSessionViewModel = new GameSessionViewModel(
                 _player,

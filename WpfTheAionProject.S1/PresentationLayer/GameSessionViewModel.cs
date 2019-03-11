@@ -7,31 +7,17 @@ using WpfTheAionProject.Models;
 
 namespace WpfTheAionProject.PresentationLayer
 {
-    class GameSessionViewModel
+   public class GameSessionViewModel
     {
-        /// <summary>
-        /// View model for the game session view 
-        /// </summary>
-
 
         #region Fields
-        private Player _player;
-        private List<string> _messeges;
 
 
         #endregion
 
         #region Properties
-        public Player Player
-        {
-            get { return _player; }
-            set { _player = value; }
-        }
-        public List<string> Messeges
-        {
-            get { return _messeges; }
-            set { _messeges = value; }
-        }
+        public Player Player { get; set; }
+        public List<string> Messeges { get; set; }
 
 
 
@@ -46,8 +32,8 @@ namespace WpfTheAionProject.PresentationLayer
             Player player,
             List<string> initalMessages)
         {
-            _player = player;
-            _messeges = initalMessages;
+            Player = player;
+            Messeges = initalMessages;
         }
         #endregion
 

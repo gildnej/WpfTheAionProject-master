@@ -20,7 +20,7 @@ namespace WpfTheAionProject.PresentationLayer
     /// </summary>
     public partial class GameSessionView : Window
     {
-        GameSessionViewModel _gameSessionViewModel;
+        public GameSessionViewModel _gameSessionViewModel;
 
         public GameSessionView()
         {

@@ -16,41 +16,19 @@ namespace WpfTheAionProject.Models
         public enum JobTitleName { Researcher, MissionLeader, Supervisor }
 
         #endregion
-
         #region FIELDS
-
-        private int _lives;
-        private int _health;
-        private int _experiencePoints;
-        private JobTitleName _jobTitle;
 
         #endregion
 
         #region PROPERTIES
 
-        public int Lives
-        {
-            get { return _lives; }
-            set { _lives = value; }
-        }
+        public int Lives { get; set; }
 
-        public JobTitleName JobTitle
-        {
-            get { return _jobTitle; }
-            set { _jobTitle = value; }
-        }
+        public JobTitleName JobTitle { get; set; }
 
-        public int Health
-        {
-            get { return _health; }
-            set { _health = value; }
-        }
+        public int Health { get; set; }
 
-        public int ExperiencePoints
-        {
-            get { return _experiencePoints; }
-            set { _experiencePoints = value; }
-        }
+        public int ExperiencePoints { get; set; }
 
         #endregion
 
@@ -73,12 +51,12 @@ namespace WpfTheAionProject.Models
 
             List<string> vowels = new List<string>() { "A", "E", "I", "O", "U" };
 
-            if (vowels.Contains(_jobTitle.ToString().Substring(0, 1))) ;
+            if (vowels.Contains(JobTitle.ToString().Substring(0, 1))) ;
             {
                 article = "an";
             }
 
-            return $"Hello, my name is {_name} and I am {article} {_jobTitle} for the Aion Project.";
+            return $"Hello, my name is {_name} and I am {article} {JobTitle} for the Aion Project.";
         }
 
         #endregion
